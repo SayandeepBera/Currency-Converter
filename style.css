@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/trees.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    background-color: #f4e4ba;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 50vh;
+    width: 55vh;
+    opacity: 0.8;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+form{
+    margin-top: 2rem;
+}
+
+form p{
+    font-size: 1.25rem;
+}
+
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input{
+    border: 2px solid lightgray;
+    font-size: 1.1rem;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.select-container img{
+    max-width: 2rem;
+}
+
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(102, 101, 101);
+    gap: 0.85rem;
+}
+
+.select-container select{
+    font-size: 1.05rem;
+    width: auto;
+}
+
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+
+.msg p{
+    margin-top: 1rem;
+}
+
+#result{
+    background-color: green;
+    display: inline;
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+#msg-show{
+    background-color: yellowgreen;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+}
+
+form button{
+    height: 3rem;
+    background-color: #af4d98;
+    color: #fff;
+    font-size: 1.15rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* For small devices */
+@media(min-width : 300px) and (max-width : 700px){
+    body{
+        background-image: url(/b2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container{
+        width: 40vh;
+        height: 58vh;
+        padding: 1.2rem;
+    }
+    .container h2{
+        font-size: 1.8rem;
+    }
+    form{
+        margin-top: 1.5rem;
+    }
+    .dropdown{
+        margin-top: 1.5rem;
+    }
+    .select-container{
+        width: 6.2rem;
+        gap: 0.2rem;
+    }
+    .select-container select{
+        font-size: 1rem;
+    }
+    .msg{
+        margin: 1.5rem 0;
+    }
+    #result{
+        font-size: 1.15rem;
+    }
+    form p{
+        font-size: 1.1rem;
+    }
+    #msg-show{
+        padding: 0.4rem;
+    }
+    .msg p{
+        margin-top: 0.8rem;
+    }
+    form button{
+        font-size: 1.1rem;
+        height: 2.5rem;
+    }
+    form input{
+        width: 95%;
+    }
+}
